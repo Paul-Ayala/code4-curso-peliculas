@@ -1,0 +1,106 @@
+CRITICAL - 2024-05-12 01:58:28 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\PeliculaModel"
+[Method: POST, Route: pelicula/create]
+in SYSTEMPATH\Model.php on line 813.
+ 1 SYSTEMPATH\Model.php(813): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PeliculaModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Pelicula.php(36): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-12 01:58:44 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\PeliculaModel"
+[Method: POST, Route: pelicula/create]
+in SYSTEMPATH\Model.php on line 813.
+ 1 SYSTEMPATH\Model.php(813): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\PeliculaModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Pelicula.php(36): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-12 02:14:21 --> ErrorException: Undefined variable $id
+[Method: GET, Route: pelicula/edit/1]
+in APPPATH\Views\pelicula\edit.php on line 9.
+ 1 APPPATH\Views\pelicula\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/edit', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(48): view('pelicula/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-12 02:28:41 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: pelicula/delete/3]
+in APPPATH\Views\pelicula\show.php on line 6.
+ 1 APPPATH\Views\pelicula\show.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\show.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/show', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(33): view('/pelicula/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->show('delete', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-12 02:38:37 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pelicula/edit/1]
+in APPPATH\Views\pelicula\_form.php on line 5.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/_form', [], true)
+ 4 APPPATH\Views\pelicula\edit.php(10): view('pelicula/_form', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/edit', [], true)
+ 8 APPPATH\Controllers\Pelicula.php(58): view('pelicula/edit', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-12 02:38:52 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pelicula/edit/1]
+in APPPATH\Views\pelicula\_form.php on line 5.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/_form', [], true)
+ 4 APPPATH\Views\pelicula\edit.php(10): view('pelicula/_form', [...])
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/edit', [], true)
+ 8 APPPATH\Controllers\Pelicula.php(58): view('pelicula/edit', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-12 02:41:35 --> ErrorException: Undefined variable $pelicula
+[Method: GET, Route: pelicula/new]
+in APPPATH\Views\pelicula\_form.php on line 2.
+ 1 APPPATH\Views\pelicula\_form.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pelicula', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\_form.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\_form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/_form', [], true)
+ 5 APPPATH\Views\pelicula\new.php(12): view('pelicula/_form', [...])
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\new.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/new', [], true)
+ 9 APPPATH\Controllers\Pelicula.php(38): view('pelicula/new')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->new()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

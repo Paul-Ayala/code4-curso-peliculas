@@ -1,0 +1,183 @@
+CRITICAL - 2024-05-11 13:42:27 --> ArgumentCountError: Too few arguments to function App\Controllers\Home::update(), 0 passed in C:\laragon\www\codeigniter4\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: update/1]
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->update()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 14:48:12 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: pelicula]
+in APPPATH\Controllers\Pelicula.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\codeigniter4\\app\\Controllers\\Pelicula.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pelicula')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pelicula')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Pelicula', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 15:01:25 --> ParseError: syntax error, unexpected token "echo"
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 11.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Pelicula.php(11): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 15:04:07 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 13.
+ 1 APPPATH\Views\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 15:04:12 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 13.
+ 1 APPPATH\Views\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 16:58:47 --> ErrorException: Undefined array key 2
+[Method: GET, Route: pelicula]
+in APPPATH\Controllers\Pelicula.php on line 14.
+ 1 APPPATH\Controllers\Pelicula.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'C:\\laragon\\www\\codeigniter4\\app\\Controllers\\Pelicula.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 16:59:04 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 10.
+ 1 APPPATH\Views\index.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 10)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:02:15 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 12.
+ 1 APPPATH\Views\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:02:31 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 12.
+ 1 APPPATH\Views\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:03:09 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 12.
+ 1 APPPATH\Views\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:03:12 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 12.
+ 1 APPPATH\Views\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:04:17 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 12.
+ 1 APPPATH\Views\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:04:43 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 15.
+ 1 APPPATH\Views\index.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-11 17:05:41 --> ErrorException: Array to string conversion
+[Method: GET, Route: pelicula]
+in APPPATH\Views\index.php on line 12.
+ 1 APPPATH\Views\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Pelicula.php(17): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
