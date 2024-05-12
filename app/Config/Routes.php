@@ -23,4 +23,6 @@ $routes->get('/', 'Home::index');
 // $routes->get('/pelicula/new', 'Pelicula::create');
 
 $routes->presenter('pelicula');
+$routes->presenter('categoria');
+
 
