@@ -22,7 +22,31 @@ $routes->get('/', 'Home::index');
 
 // $routes->get('/pelicula/new', 'Pelicula::create');
 
-$routes->presenter('pelicula');
-$routes->presenter('categoria');
 
+// $routes->presenter('pelicula');
+// $routes->presenter('categoria');
+
+$routes->group('dashboard', function($routes){
+    //Por defecto buscan en: App\Controllers\
+    // $routes->presenter('pelicula');
+    // $routes->presenter('categoria');
+    //rutas por nombre
+    $routes->get('test', 'Pelicula::test', [ 'as' => 'test'] );
+    //puede recibir argumentos:
+    // $routes->get('test/(:num)', 'Pelicula::test/$1', [ 'as' => 'test'] );
+    // pero en la ruta hay que cambiarle en function se espera $parametro y en botones se podría hacer:
+    // route_to('test', 5)
+    //limitar rutas:
+        //para mostrar solo 1:
+        //$routes->presenter('categoria', ['only' => 'index']);
+        // mostrar las que se quieren:
+        // $routes->presenter('categoria', ['only' => ['index', 'new', 'create']]);
+        //Mostrar todas, excepto las que se indiquen:
+        //$routes->presenter('categoria', ['except' => 'index']);
+        //$routes->presenter('categoria', ['except' => ['index', 'new', 'create']]);
+        //rutas desde una carpeta en controllers:App\Controllers\Dashboard
+        $routes->presenter('pelicula', ['controller' => 'Dashboard\pelicula']);
+        $routes->presenter('categoria',  ['controller' => 'Dashboard\categoria']); 
+        //$routes->get('/test', Dashboard\Test::index)
+});
 

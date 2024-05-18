@@ -1,0 +1,571 @@
+CRITICAL - 2024-05-18 00:54:46 --> ErrorException: Undefined variable $router
+[Method: GET, Route: categoria]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:54:49 --> ErrorException: Undefined variable $router
+[Method: GET, Route: pelicula]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:54:51 --> ErrorException: Undefined variable $router
+[Method: GET, Route: peliculas]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:54:51 --> ErrorException: Undefined variable $router
+[Method: GET, Route: update/1/2]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:54:52 --> ErrorException: Undefined variable $router
+[Method: GET, Route: update/1/andres]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:54:59 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:55:02 --> ErrorException: Undefined variable $router
+[Method: GET, Route: /]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:55:41 --> ErrorException: Undefined variable $router
+[Method: GET, Route: dashboard]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:55:49 --> ErrorException: Undefined variable $router
+[Method: GET, Route: dashboard/public]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:56:00 --> ErrorException: Undefined variable $router
+[Method: GET, Route: dashboard/public]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 00:56:07 --> ErrorException: Undefined variable $router
+[Method: GET, Route: dashboard/public]
+in APPPATH\Config\Routes.php on line 29.
+ 1 APPPATH\Config\Routes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $router', 'C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php', 29)
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('C:\\laragon\\www\\codeigniter4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:06:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/index.php"
+[Method: GET, Route: dashboard/categoria]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/index', [], true)
+ 3 APPPATH\Controllers\Categoria.php(15): view('/dashboard/categoria/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:08:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/index.php"
+[Method: GET, Route: dashboard/categoria]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/index', [], true)
+ 3 APPPATH\Controllers\Categoria.php(15): view('/dashboard/categoria/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:08:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/show.php"
+[Method: GET, Route: dashboard/categoria/show]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/show.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/show', [], true)
+ 3 APPPATH\Controllers\Categoria.php(23): view('/dashboard/categoria/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->show('show')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:08:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/index.php"
+[Method: GET, Route: dashboard/categoria]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/index', [], true)
+ 3 APPPATH\Controllers\Categoria.php(15): view('/dashboard/categoria/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:10:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/index.php"
+[Method: GET, Route: dashboard/pelicula]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/index', [], true)
+ 3 APPPATH\Controllers\Pelicula.php(24): view('/dashboard/pelicula/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:10:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/index.php"
+[Method: GET, Route: dashboard/pelicula]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/index', [], true)
+ 3 APPPATH\Controllers\Pelicula.php(24): view('/dashboard/pelicula/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:10:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/index.php"
+[Method: GET, Route: dashboard/pelicula]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/index', [], true)
+ 3 APPPATH\Controllers\Pelicula.php(24): view('/dashboard/pelicula/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:11:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/show.php"
+[Method: GET, Route: dashboard/categoria/show/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/show.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/show', [], true)
+ 3 APPPATH\Controllers\Categoria.php(23): view('/dashboard/categoria/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->show('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:11:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/show.php"
+[Method: GET, Route: dashboard/categoria/show/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/show.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/show', [], true)
+ 3 APPPATH\Controllers\Categoria.php(23): view('/dashboard/categoria/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->show('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:11:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/_form', [], true)
+ 3 APPPATH\Views\pelicula\edit.php(10): view('/dashboard/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/edit', [], true)
+ 7 APPPATH\Controllers\Pelicula.php(65): view('/pelicula/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:12:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/_form', [], true)
+ 3 APPPATH\Views\pelicula\edit.php(10): view('/dashboard/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/edit', [], true)
+ 7 APPPATH\Controllers\Pelicula.php(65): view('/pelicula/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:12:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/_form', [], true)
+ 3 APPPATH\Views\pelicula\edit.php(10): view('/dashboard/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/edit', [], true)
+ 7 APPPATH\Controllers\Pelicula.php(65): view('/pelicula/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:12:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/_form', [], true)
+ 3 APPPATH\Views\pelicula\edit.php(10): view('/dashboard/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/edit', [], true)
+ 7 APPPATH\Controllers\Pelicula.php(65): view('/pelicula/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->edit('2')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:18:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/pelicula/_form', [], true)
+ 3 APPPATH\Views\pelicula\new.php(12): view('/dashboard/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\pelicula\\new.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/new', [], true)
+ 7 APPPATH\Controllers\Pelicula.php(42): view('/pelicula/new', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pelicula->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 01:19:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/dashboard/categoria/new.php"
+[Method: GET, Route: dashboard/categoria/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/dashboard/categoria/new.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/dashboard/categoria/new', [], true)
+ 3 APPPATH\Controllers\Categoria.php(30): view('/dashboard/categoria/new', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->new()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-18 01:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 01:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 01:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 02:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 02:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 02:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 02:21:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 02:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-18 03:21:29 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Dashboard/pelicula::index"
+[Method: GET, Route: dashboard/pelicula]
+in SYSTEMPATH\Router\Router.php on line 491.
+ 1 SYSTEMPATH\Router\Router.php(491): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Dashboard/pelicula::index')
+ 2 SYSTEMPATH\Router\Router.php(209): CodeIgniter\Router\Router->checkRoutes('dashboard/pelicula')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('dashboard/pelicula')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-18 03:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-18 03:34:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pelicula/index.php"
+[Method: GET, Route: dashboard/pelicula]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pelicula/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pelicula/index', [], true)
+ 3 APPPATH\Controllers\Dashboard\Pelicula.php(25): view('pelicula/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Pelicula->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Pelicula))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:38:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/_form', [], true)
+ 3 APPPATH\Views\dashboard\pelicula\new.php(12): view('/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\pelicula\\new.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/pelicula/new', [], true)
+ 7 APPPATH\Controllers\Dashboard\Pelicula.php(43): view('dashboard/pelicula/new', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Pelicula->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:39:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/_form', [], true)
+ 3 APPPATH\Views\dashboard\pelicula\new.php(12): view('/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\pelicula\\new.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/pelicula/new', [], true)
+ 7 APPPATH\Controllers\Dashboard\Pelicula.php(43): view('dashboard/pelicula/new', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Pelicula->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:39:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/_form', [], true)
+ 3 APPPATH\Views\dashboard\pelicula\new.php(12): view('/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\pelicula\\new.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/pelicula/new', [], true)
+ 7 APPPATH\Controllers\Dashboard\Pelicula.php(43): view('dashboard/pelicula/new', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Pelicula->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:40:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/pelicula/_form.php"
+[Method: GET, Route: dashboard/pelicula/new]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/pelicula/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('/pelicula/_form', [], true)
+ 3 APPPATH\Views\dashboard\pelicula\new.php(12): view('/pelicula/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\pelicula\\new.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/pelicula/new', [], true)
+ 7 APPPATH\Controllers\Dashboard\Pelicula.php(43): view('dashboard/pelicula/new', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Pelicula->new()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Pelicula))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-18 03:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-18 03:43:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:44:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:44:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:44:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:45:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/7]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:45:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/6]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('6')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:47:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:47:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-05-18 03:47:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categoria/_form.php"
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categoria/_form.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria/_form', [], true)
+ 3 APPPATH\Views\dashboard\categoria\edit.php(10): view('categoria/_form', [...])
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 7 APPPATH\Controllers\Dashboard\Categoria.php(49): view('dashboard/categoria/edit', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-18 03:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:48:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-18 03:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
