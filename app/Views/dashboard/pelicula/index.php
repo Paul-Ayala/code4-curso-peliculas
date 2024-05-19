@@ -13,6 +13,7 @@
      si lo quitas lo agrega y los botones redirigen, pero es más recomendado ponerle slash ya que desde:
  
       http://codeigniter4.test/pelicula/new sigue funcionando:  -->
+      <?= view('partials/_session') ?>
     <a href="<?= route_to('test') ?>">Test</a>
     <a href="/dashboard/pelicula/new">Crear</a>
 

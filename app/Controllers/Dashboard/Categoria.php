@@ -10,6 +10,7 @@ class Categoria extends BaseController
 
     public function index()
     {
+        session()->set('key', 4);
         $categoriaModel = new CategoriaModel();
        
        echo view('dashboard/categoria/index', [
@@ -19,6 +20,7 @@ class Categoria extends BaseController
 
     //Muestra los datos del registro seleccionado
     public function show($id){
+        
         $categoriaModel = new CategoriaModel();
         echo view('dashboard/categoria/show', [
             'categoria' => $categoriaModel->find($id)
@@ -39,7 +41,7 @@ class Categoria extends BaseController
             'titulo' => $this->request->getPost('titulo')
         ]);
 
-        return redirect()->to('dashboard/categoria');
+        return redirect()->to('dashboard/categoria')->with('mensaje', 'Registro creado con éxito');
     }
 
     //Formulario para actualizar
@@ -57,14 +59,17 @@ class Categoria extends BaseController
             'titulo' => $this->request->getPost('titulo')
         ]);
 
-        return redirect()->back();
+        return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
     }
     //Función para eliminar
     public function delete($id){
         $categoriaModel = new CategoriaModel();
         $categoriaModel->delete($id);
-
+        //segunda forma de mandar mensaje flash
+        session()->setFlashdata('mensaje', 'Registro eliminado con éxito.');
         return redirect()->back();
+        //primera forma
+        // return redirect()->back()->with('mensaje', 'Registro eliminado con éxito');
     }
 
 }

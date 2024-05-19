@@ -52,7 +52,7 @@ class Pelicula extends BaseController
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion')
         ]);
-        return redirect()->to('/dashboard/pelicula');
+        return redirect()->to('/dashboard/pelicula')->with('mensaje', 'Registro creado con éxito');
 
         // var_dump($this->request->getPost('titulo'));
         //equivalente:  $_POST['titulo'];
@@ -74,7 +74,7 @@ class Pelicula extends BaseController
             'descripcion' => $this->request->getPost('descripcion')
         ]);
         //redirige a la anterior
-        return redirect()->back();
+        return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
         //redirige hacia la pagina indicada, recordar que esto se dibujaría con:
         //Datos de App.php:
         // $baseURL = 'http://codeigniter4.test/';
@@ -91,7 +91,7 @@ class Pelicula extends BaseController
         $peliculaModel = new PeliculaModel();
         $peliculaModel->delete($id);
 
-        return redirect()->back();
+        return redirect()->back()->with('mensaje', 'Registro eliminado con éxito');
     }
 
     //ruta por nombre
