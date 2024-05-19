@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas</title>
-</head>
-<body>
-    <h1>Listado de Peliculas</h1>
-    <!-- si ponem os slash antes "/pelicula/new", el link lo interpretará
-     con la url: http://localhost/pelicula/new, si lo accedes desde 
-     http://localhost/codeigniter4/public/pelicula/new sí se verá.
-     si lo quitas lo agrega y los botones redirigen, pero es más recomendado ponerle slash ya que desde:
- 
-      http://codeigniter4.test/pelicula/new sigue funcionando:  -->
-      <?= view('partials/_session') ?>
+<?= $this->extend('Layouts/dashboard') ?>
+<?= $this->section('header') ?>
+Listado de Peliculas
+<?= $this->endSection() ?>
+<?= $this->section('contenido') ?>
     <a href="<?= route_to('test') ?>">Test</a>
     <a href="/dashboard/pelicula/new">Crear</a>
 
@@ -40,5 +29,9 @@
     </tr>
     <?php endforeach ?>
     </table>
-</body>
-</html>
+<?= $this->endSection() ?>
+
+
+
+
+

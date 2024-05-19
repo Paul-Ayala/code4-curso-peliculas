@@ -53,3 +53,324 @@ INFO - 2024-05-19 15:17:22 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-05-19 15:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-19 15:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-19 15:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:56:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 15:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 15:58:01 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/new]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\new.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\new.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/new', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(33): view('dashboard/categoria/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 15:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 15:58:10 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/new]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\new.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\new.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/new', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(33): view('dashboard/categoria/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 15:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 15:58:17 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/new]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\new.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\new.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/new', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(33): view('dashboard/categoria/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 15:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 15:58:18 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/new]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\new.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\new.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/new', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(33): view('dashboard/categoria/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 15:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 15:59:38 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/new]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\new.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\new.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/new', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(33): view('dashboard/categoria/new', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->new()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 15:59:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 15:59:42 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/show/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\show.php(3): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/show', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(26): view('dashboard/categoria/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->show('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:00:44 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(7): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:00:57 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(7): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:01:48 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(7): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:01:49 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(7): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:02:20 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(7): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:02:34 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(6): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:02:35 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(6): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:03:05 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:03:06 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:03:07 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-19 16:03:07 --> RuntimeException: View themes, no current section.
+[Method: GET, Route: dashboard/categoria/edit/3]
+in SYSTEMPATH\View\View.php on line 440.
+ 1 APPPATH\Views\dashboard\categoria\edit.php(5): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\codeigniter4\\app\\Views\\dashboard\\categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard/categoria/edit', [], true)
+ 5 APPPATH\Controllers\Dashboard\Categoria.php(51): view('dashboard/categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard\Categoria->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-05-19 16:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-19 16:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

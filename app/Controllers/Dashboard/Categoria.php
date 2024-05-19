@@ -10,7 +10,7 @@ class Categoria extends BaseController
 
     public function index()
     {
-        session()->set('key', 4);
+        // session()->set('key', 4);
         $categoriaModel = new CategoriaModel();
        
        echo view('dashboard/categoria/index', [

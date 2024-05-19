@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualizar Pelicula</title>
-</head>
-<body>
-    <form action="/dashboard/pelicula/update/<?= $pelicula['id'] ?>" method="post">
-        <?= view('/dashboard/pelicula/_form', ['op' => 'Actualizar']) ?>
-    </form>
-</body>
-</html>
+<?= $this->extend('Layouts/dashboard') ?>
+<?= $this->section('header') ?>
+Actualizar Pelicula
+<?= $this->endSection() ?>
+<?= $this->section('contenido') ?>
+<form action="/dashboard/pelicula/update/<?= $pelicula['id'] ?>" method="post">
+    <?= view('/dashboard/pelicula/_form', ['op' => 'Actualizar']) ?>
+</form>
+<?= $this->endSection() ?>
