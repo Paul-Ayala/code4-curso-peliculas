@@ -37,11 +37,18 @@ class Categoria extends BaseController
     //Función que crea
     public function create(){
         $categoriaModel = new CategoriaModel();
-        $categoriaModel->insert([
-            'titulo' => $this->request->getPost('titulo')
-        ]);
-
-        return redirect()->to('dashboard/categoria')->with('mensaje', 'Registro creado con éxito');
+        if ($this->validate('categoriasVal')) {
+            $categoriaModel->insert([
+                'titulo' => $this->request->getPost('titulo')
+            ]);
+    
+            return redirect()->to('dashboard/categoria')->with('mensaje', 'Registro creado con éxito');
+        }else {
+            session()->setFlashdata([
+                'validation' => $this->validator
+            ]);
+            return redirect()->back()->withInput();
+        }
     }
 
     //Formulario para actualizar
@@ -55,11 +62,18 @@ class Categoria extends BaseController
     //Función que actualiza
     public function update($id){
         $categoriaModel = new CategoriaModel();
-        $categoriaModel->update($id, [
-            'titulo' => $this->request->getPost('titulo')
-        ]);
-
-        return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
+        if ($this->validate('categoriasVal')) {
+            $categoriaModel->update($id, [
+                'titulo' => $this->request->getPost('titulo')
+            ]);
+    
+            return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
+        }else {
+            session()->setFlashdata([
+                'validation' => $this->validator
+            ]);
+            return redirect()->back()->withInput();
+        }
     }
     //Función para eliminar
     public function delete($id){

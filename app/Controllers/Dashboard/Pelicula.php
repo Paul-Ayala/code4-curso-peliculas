@@ -48,14 +48,23 @@ class Pelicula extends BaseController
     //Función que crea
     public function create(){
         $peliculaModel = new PeliculaModel();
-        $peliculaModel->insert([
-            'titulo' => $this->request->getPost('titulo'),
-            'descripcion' => $this->request->getPost('descripcion')
-        ]);
-        return redirect()->to('/dashboard/pelicula')->with('mensaje', 'Registro creado con éxito');
 
-        // var_dump($this->request->getPost('titulo'));
-        //equivalente:  $_POST['titulo'];
+        if ($this->validate('peliculasVal')) {
+            $peliculaModel->insert([
+                'titulo' => $this->request->getPost('titulo'),
+                'descripcion' => $this->request->getPost('descripcion')
+            ]);
+            return redirect()->to('/dashboard/pelicula')->with('mensaje', 'Registro creado con éxito');
+    
+            // var_dump($this->request->getPost('titulo'));
+            //equivalente:  $_POST['titulo'];
+        }else {
+            session()->setFlashdata([
+                'validation' => $this->validator
+            ]);
+            return redirect()->back()->withInput();
+        }
+        
     }
 
     //Formulario para actualizar
@@ -69,7 +78,10 @@ class Pelicula extends BaseController
     //Función que actualiza
     public function update($id){
         $peliculaModel = new PeliculaModel();
-        $peliculaModel->update($id, [
+
+        //validate va a buscar en el archivo Validation.php una variable con el nombre indicado en este caso peliculasVal
+        if ($this->validate('peliculasVal')) {
+            $peliculaModel->update($id, [
             'titulo' => $this->request->getPost('titulo'),
             'descripcion' => $this->request->getPost('descripcion')
         ]);
@@ -83,6 +95,17 @@ class Pelicula extends BaseController
         // return redirect()->to('/dashboard/pelicula');
         //redirección con ruta por nombre
         // return redirect()->route('test');
+        }else {
+            //eso nos sirve para imprimir todopds los errores, pero esoi no nos interesa
+            // var_dump($this->validator->listErrors());
+            // desde el controlador no vamos a hacer nada, si no desde la vista
+            session()->setFlashdata([
+                'validation' => $this->validator
+            ]);
+            return redirect()->back()->withInput();
+        }
+
+       
 
     }
 
