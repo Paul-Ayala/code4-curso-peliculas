@@ -15,13 +15,13 @@ Listado de Peliculas
         </tr>
     <?php foreach ($peliculas as $key => $value) : ?>
         <tr>
-        <td><?= $value['id'] ?></td>
-        <td><?= $value['titulo'] ?></td>
-        <td><?= $value['descripcion'] ?></td>
+        <td><?= $value->id ?></td>
+        <td><?= $value->titulo ?></td>
+        <td><?= $value->descripcion ?></td>
         <td>
-        <a href="/dashboard/pelicula/edit/<?= $value['id'] ?>">Editar</a>
-        <a href="/dashboard/pelicula/show/<?= $value['id'] ?>">Ver</a>
-        <form action="/dashboard/pelicula/delete/<?= $value['id'] ?>" method="post">
+        <a href="/dashboard/pelicula/edit/<?= $value->id ?>">Editar</a>
+        <a href="/dashboard/pelicula/show/<?= $value->id ?>">Ver</a>
+        <form action="/dashboard/pelicula/delete/<?= $value->id ?>" method="post">
         <button type="submit">Eliminar</button>
         </form>
         </td>

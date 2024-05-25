@@ -19,7 +19,11 @@ class Pelicula extends BaseController
     // }
     public function index()
     {
+        //equivale a SELECT * FROM `peliculas` LIMIT 20, 10
         $peliculaModel = new PeliculaModel();
+        // $db = \Config\Database::connect();
+        // $builder = $db->table('peliculas');
+        // return $builder->limit(10, 20)->getCompiledSelect();
        
        echo view('dashboard/pelicula/index', [
         'peliculas' => $peliculaModel->findAll(),
@@ -38,12 +42,19 @@ class Pelicula extends BaseController
     public function new(){
         //esto funciona, si no se hubiera reutilizado para _form, ya que ahí espera value, pero para crear no llevan los campos value
         // echo view('pelicula/new');
+
+        //esto funciona si en el modelo el retun es array
+        // echo view('dashboard/pelicula/new', [
+        //     'pelicula' => [
+        //         'titulo' => '',
+        //         'descripcion' => ''
+        //     ]
+        // ]);
+
         echo view('dashboard/pelicula/new', [
-            'pelicula' => [
-                'titulo' => '',
-                'descripcion' => ''
-            ]
+            'pelicula' => new PeliculaModel()
         ]);
+
     }
     //Función que crea
     public function create(){

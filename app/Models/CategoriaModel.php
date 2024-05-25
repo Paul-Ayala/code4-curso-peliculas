@@ -7,6 +7,8 @@ use CodeIgniter\Model;
 class CategoriaModel extends Model
 {
     protected $table  = 'categorias';
+        // protected $returnType = 'array';
+        protected $returnType = 'object';
     protected $primaryKey = 'id';
     protected $allowedFields = ['titulo'];
 }

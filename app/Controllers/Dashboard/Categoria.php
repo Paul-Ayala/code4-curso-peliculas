@@ -28,10 +28,13 @@ class Categoria extends BaseController
     }
     //Formulario para crear
     public function new(){
+        //esto funciona si fuera array, definido en el modelo
+        // echo view('dashboard/categoria/new', [
+        //     'categoria' => [
+        //         'titulo' => ''
+        //     ]
         echo view('dashboard/categoria/new', [
-            'categoria' => [
-                'titulo' => ''
-            ]
+            'categoria' => new CategoriaModel()
         ]);
     }
     //Función que crea
