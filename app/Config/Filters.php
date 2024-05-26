@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Filters\DashboardFilter;
 use CodeIgniter\Config\Filters as BaseFilters;
 use CodeIgniter\Filters\Cors;
 use CodeIgniter\Filters\CSRF;
@@ -12,6 +13,8 @@ use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
+use App\Filters\MiFiltro;
+
 
 class Filters extends BaseFilters
 {
@@ -34,6 +37,9 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        // 'miFiltro'      =>MiFiltro::class,
+        'DashboardFilter'      =>DashboardFilter::class,
+
     ];
 
     /**
@@ -57,7 +63,7 @@ class Filters extends BaseFilters
         'after' => [
             'pagecache',   // Web Page Caching
             'performance', // Performance Metrics
-            'toolbar',     // Debug Toolbar
+            // 'toolbar',     // Debug Toolbar
         ],
     ];
 
@@ -69,11 +75,13 @@ class Filters extends BaseFilters
      */
     public array $globals = [
         'before' => [
+            // 'miFiltro',
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
         ],
         'after' => [
+            'toolbar',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -103,5 +111,19 @@ class Filters extends BaseFilters
      *
      * @var array<string, array<string, list<string>>>
      */
-    public array $filters = [];
+    public array $filters = [
+        // 'miFiltro' => [
+        //     'before' => [
+                // 'dashboard/pelicula',
+                //para redirigir todas las rutas de una parte colocar 
+                // 'dashboard/pelicula/*',
+        //     ]
+        // ]
+        'DashboardFilter' => [
+            'before' => [
+                'dashboard',
+                'dashboard/*',
+            ]
+        ]
+    ];
 }
