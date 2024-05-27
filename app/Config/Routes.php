@@ -25,6 +25,10 @@ $routes->get('/', 'Home::index');
 
 // $routes->presenter('pelicula');
 // $routes->presenter('categoria');
+$routes->group('api', ['namespace' => 'App\Controllers\Api'], function($routes){
+    $routes->resource('pelicula');
+    $routes->resource('categoria');
+});
 
 $routes->group('dashboard', function($routes){
     //Por defecto buscan en: App\Controllers\

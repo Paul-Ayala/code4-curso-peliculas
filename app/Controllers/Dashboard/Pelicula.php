@@ -10,7 +10,7 @@ class Pelicula extends BaseController
     // public function index()
     // {
     //     $peliculaModel = new PeliculaModel();
-    //     //var_dump($peliculaModel->findAll()); imprime en pantalla los datos
+    ////var_dump($peliculaModel->findAll()); imprime en pantalla los datos
     //     $data = ['peliculas' => $peliculaModel->findAll(),
     //              'nombreVariableVista2' => 'Contenido 2',
     //              'nombreVariableVista3' => 7,
