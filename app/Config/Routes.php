@@ -36,6 +36,10 @@ $routes->group('dashboard', function($routes){
     // $routes->presenter('categoria');
     //rutas por nombre
     $routes->get('test', 'Pelicula::test', [ 'as' => 'test'] );
+
+    $routes->get('pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas/$1', ['as' => 'pelicula.etiquetas']);
+    $routes->post('pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas_post/$1', ['as' => 'pelicula.etiquetas']);
+    $routes->post('pelicula/(:num)/etiqueta/(:num)/delete', 'Dashboard\Pelicula::etiqueta_delete/$1/$2', ['as' => 'pelicula.etiqueta_delete']);
     //puede recibir argumentos:
     // $routes->get('test/(:num)', 'Pelicula::test/$1', [ 'as' => 'test'] );
     // pero en la ruta hay que cambiarle en function se espera $parametro y en botones se podría hacer:
@@ -51,11 +55,14 @@ $routes->group('dashboard', function($routes){
         //rutas desde una carpeta en controllers:App\Controllers\Dashboard
         $routes->presenter('pelicula', ['controller' => 'Dashboard\pelicula']);
         $routes->presenter('categoria',  ['controller' => 'Dashboard\categoria']); 
+        $routes->presenter('etiqueta', ['controller' => 'Dashboard\etiqueta']);
+
         //$routes->get('/test', Dashboard\Test::index)
 
         //TEST USER
         // $routes->get('usuario/crear', '\App\Controllers\Web\Usuario::crear_usuario'); 
         // $routes->get('usuario/probar/contrasena', '\App\Controllers\Web\Usuario::probar_contrasena'); 
+
     });
 
     $routes->get('login', '\App\Controllers\Web\Usuario::login', ['as' => 'usuario.login']);

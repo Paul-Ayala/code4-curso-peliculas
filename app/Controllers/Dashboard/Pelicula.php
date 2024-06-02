@@ -3,6 +3,11 @@
 namespace App\Controllers\Dashboard;
 
 use App\Controllers\BaseController;
+use App\Models\CategoriaModel;
+use App\Models\EtiquetaModel;
+use App\Models\ImagenModel;
+use App\Models\PeliculaEtiquetaModel;
+use App\Models\PeliculaImagenModel;
 use App\Models\PeliculaModel;
 
 class Pelicula extends BaseController
@@ -21,21 +26,33 @@ class Pelicula extends BaseController
     {
         //equivale a SELECT * FROM `peliculas` LIMIT 20, 10
         $peliculaModel = new PeliculaModel();
+
+        // $this->generar_imagen();
+        // $this->asignar_imagen();
+
+
         // $db = \Config\Database::connect();
         // $builder = $db->table('peliculas');
         // return $builder->limit(10, 20)->getCompiledSelect();
+        $data = [
+            // 'peliculas' => $peliculaModel->select('peliculas.id, peliculas.titulo, peliculas.descripcion, peliculas.categoria_fk')->join('categorias', 'categorias.id = peliculas.categoria_fk')->find(),
+            'peliculas' => $peliculaModel->select('peliculas.*, categorias.titulo as categoria')->join('categorias', 'categorias.id = peliculas.categoria_fk')->find(),
+        ];
        
-       echo view('dashboard/pelicula/index', [
-        'peliculas' => $peliculaModel->findAll(),
-       ]);
+       echo view('dashboard/pelicula/index', $data);
     }
 
     //Muestra los datos del registro seleccionado
     public function show($id){
         $peliculaModel = new PeliculaModel();
+        // $imagenModel = new ImagenModel();
+        // var_dump($imagenModel->getPeliculasById(2));
+        // var_dump($peliculaModel->getImagenesById($id));
         // var_dump($peliculaModel->find($id));
         echo view('dashboard/pelicula/show', [
-            'pelicula' => $peliculaModel->find($id)
+            'pelicula' => $peliculaModel->find($id),
+            'imagenes' => $peliculaModel->getImagenesById($id),
+            'etiquetas' => $peliculaModel->getEtiquetasById($id),
         ]);
     }
     //Formulario para crear
@@ -50,9 +67,12 @@ class Pelicula extends BaseController
         //         'descripcion' => ''
         //     ]
         // ]);
+        $categoriaModel = new CategoriaModel();
+
 
         echo view('dashboard/pelicula/new', [
-            'pelicula' => new PeliculaModel()
+            'pelicula' => new PeliculaModel(),
+            'categorias' => $categoriaModel->find(),
         ]);
 
     }
@@ -63,7 +83,8 @@ class Pelicula extends BaseController
         if ($this->validate('peliculasVal')) {
             $peliculaModel->insert([
                 'titulo' => $this->request->getPost('titulo'),
-                'descripcion' => $this->request->getPost('descripcion')
+                'descripcion' => $this->request->getPost('descripcion'),
+                'categoria_fk' => $this->request->getPost('categoria_fk')
             ]);
             return redirect()->to('/dashboard/pelicula')->with('mensaje', 'Registro creado con éxito');
     
@@ -81,8 +102,12 @@ class Pelicula extends BaseController
     //Formulario para actualizar
     public function edit($id){
         $peliculaModel = new PeliculaModel();
+        $categoriaModel = new CategoriaModel();
+
+
         echo view('dashboard/pelicula/edit', [
-            'pelicula' => $peliculaModel->find($id)
+            'pelicula' => $peliculaModel->find($id),
+            'categorias' => $categoriaModel->find(),
         ]);
     }
 
@@ -94,7 +119,8 @@ class Pelicula extends BaseController
         if ($this->validate('peliculasVal')) {
             $peliculaModel->update($id, [
             'titulo' => $this->request->getPost('titulo'),
-            'descripcion' => $this->request->getPost('descripcion')
+            'descripcion' => $this->request->getPost('descripcion'),
+            'categoria_fk' => $this->request->getPost('categoria_fk')
         ]);
         //redirige a la anterior
         return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
@@ -132,6 +158,77 @@ class Pelicula extends BaseController
     public function test(){
         echo 'test';
     }
+
+    private function generar_imagen(){
+        $imagenModel = new ImagenModel();
+        $imagenModel->insert([
+            'imagen' => date('Y-m-d H:m:s'),
+            'extension' => 'PENDIENTE',
+            'data' => 'imagen paraguaya'
+        ]);
+    }
+
+    private function asignar_imagen(){
+        $imagenModel = new PeliculaImagenModel();
+        $imagenModel->insert([
+            'imagen_fk' => 2,
+            'pelicula_fk' => 9,
+        ]);
+    }
+
+    public function etiquetas($id) {
+        $categoriaModel = new CategoriaModel();
+        $etiquetaModel = new EtiquetaModel();
+        $peliculaModel = new PeliculaModel();
+
+        $etiquetas = [];
+
+        if ($this->request->getGet('categoria_fk')) {
+            $etiquetas = $etiquetaModel
+            ->where('categoria_fk', $this->request->getGet('categoria_fk'))
+            ->findAll();
+        }
+
+        echo view('dashboard/pelicula/etiquetas',[
+            'peliculas' => $peliculaModel->find($id),
+            'categorias' => $categoriaModel->findAll(),
+            'categoria_fk' =>$this->request->getGet('categoria_fk'),
+            'etiquetas' => $etiquetas,
+        ]);
+
+
+    }
+
+
+    public function etiquetas_post($id) {
+        $peliculaEtiquetaModel = new PeliculaEtiquetaModel();
+        $etiquetaFk = $this->request->getPost('etiqueta_fk');
+        $peliculaFk = $id;
+
+        $peliculaEtiqueta = $peliculaEtiquetaModel->where('etiqueta_fk', $etiquetaFk)->where('pelicula_fk', $peliculaFk)->first();
+
+        if (!$peliculaEtiqueta) {
+            $peliculaEtiquetaModel->insert([
+                'pelicula_fk' => $peliculaFk,
+                'etiqueta_fk' => $etiquetaFk,
+
+            ]);
+        }
+
+        return redirect()->back();
+
+
+    }
+
+    public function etiqueta_delete($peliculaFk, $etiquetaFk) {
+        $peliculaEtiqueta = new PeliculaEtiquetaModel();
+        $peliculaEtiqueta->where('etiqueta_fk', $etiquetaFk)
+                         ->where('pelicula_fk', $peliculaFk)
+                         ->delete();
+        
+        return $this->response->setJSON(['mensaje' => 'Eliminado']);
+    }
+    
 
 
 
