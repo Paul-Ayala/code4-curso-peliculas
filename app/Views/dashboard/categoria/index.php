@@ -27,4 +27,5 @@ Listado de Categorias
 </tr>
 <?php endforeach ?>
 </table>
+<?= $pager ->links() ?>
 <?= $this->endSection() ?>

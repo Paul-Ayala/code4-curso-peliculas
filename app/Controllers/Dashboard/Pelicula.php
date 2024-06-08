@@ -12,31 +12,31 @@ use App\Models\PeliculaModel;
 
 class Pelicula extends BaseController
 {
-    // public function index()
-    // {
-    //     $peliculaModel = new PeliculaModel();
-    ////var_dump($peliculaModel->findAll()); imprime en pantalla los datos
-    //     $data = ['peliculas' => $peliculaModel->findAll(),
-    //              'nombreVariableVista2' => 'Contenido 2',
-    //              'nombreVariableVista3' => 7,
-    //              'miArray' =>[1,2,3,4,5]];
-    //    echo view('index', $data);
-    // }
+
+    public function __construct() {
+        //otra forma de implementarlo
+        // helper(['cookie', 'date']);
+    }
+
     public function index()
     {
-        //equivale a SELECT * FROM `peliculas` LIMIT 20, 10
+        // helper('cookie');
+        // helper(['cookie', 'date']);
+        //se implementó en el BaseController
+
+        //mostrar la fecha date de la cookie
+        // echo now();
+
         $peliculaModel = new PeliculaModel();
-
-        // $this->generar_imagen();
-        // $this->asignar_imagen();
-
-
-        // $db = \Config\Database::connect();
-        // $builder = $db->table('peliculas');
-        // return $builder->limit(10, 20)->getCompiledSelect();
         $data = [
-            // 'peliculas' => $peliculaModel->select('peliculas.id, peliculas.titulo, peliculas.descripcion, peliculas.categoria_fk')->join('categorias', 'categorias.id = peliculas.categoria_fk')->find(),
-            'peliculas' => $peliculaModel->select('peliculas.*, categorias.titulo as categoria')->join('categorias', 'categorias.id = peliculas.categoria_fk')->find(),
+            'peliculas' => $peliculaModel
+            ->select('peliculas.*, categorias.titulo as categoria')
+            ->join('categorias', 'categorias.id = peliculas.categoria_fk')
+            ->paginate(10),
+            'pager' => $peliculaModel->pager
+            //quitar el find y poner paginate
+            // ->find(),
+            
         ];
        
        echo view('dashboard/pelicula/index', $data);
@@ -252,6 +252,7 @@ class Pelicula extends BaseController
     }
 
     public function asignar_imagen($peliculaFk) {
+        helper('filesystem');
         if ($imagefile = $this->request->getFile('imagen')) {
             // UPLOAD
             if ($imagefile->isValid()) {
@@ -263,27 +264,22 @@ class Pelicula extends BaseController
                         'max_size[imagen,4096]',
                     ],
                 ];
-    
                 if ($this->validate($validationRules)) {
                     //para renombrar con un nombre random
                     $imageNombre = $imagefile->getRandomName();
                     // $imageNombre = $imagefile->getName();
-
-
                     $ext = $imagefile->guessExtension();
-
                     //Para que se almacenen en la carpeta writeable
                     // $imagefile->move(WRITEPATH . 'uploads/peliculas', $imageNombre);
-
                     $imagefile->move('../public/uploads/peliculas', $imageNombre);
-
                     $imagenModel = new ImagenModel();
+                    $filePath = '../public/uploads/peliculas/' . $imageNombre;
+                    $fileInfo = get_file_info($filePath);
                     $imagenId = $imagenModel->insert([
                         'imagen' => $imageNombre,
                         'extension' => $ext,
-                        'data' => 'imagen paraguaya'
+                        'data' => json_encode($fileInfo)
                     ]);
-
                     $imagenModel = new PeliculaImagenModel();
                     $imagenModel->insert([
                     'imagen_fk' => $imagenId,

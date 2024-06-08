@@ -31,6 +31,7 @@ Listado de Etiquetas
     </tr>
     <?php endforeach ?>
     </table>
+    <?= $pager ->links() ?>
 <?= $this->endSection() ?>
 
 

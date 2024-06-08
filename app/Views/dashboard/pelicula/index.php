@@ -32,6 +32,8 @@ Listado de Peliculas
     </tr>
     <?php endforeach ?>
     </table>
+    <?= $pager ->links() ?>
+
 <?= $this->endSection() ?>
 
 
