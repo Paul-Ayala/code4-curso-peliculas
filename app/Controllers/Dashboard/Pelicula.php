@@ -122,8 +122,10 @@ class Pelicula extends BaseController
             'descripcion' => $this->request->getPost('descripcion'),
             'categoria_fk' => $this->request->getPost('categoria_fk')
         ]);
+
+        $this->asignar_imagen($id);
+
         //redirige a la anterior
-        return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
         //redirige hacia la pagina indicada, recordar que esto se dibujaría con:
         //Datos de App.php:
         // $baseURL = 'http://codeigniter4.test/';
@@ -142,6 +144,9 @@ class Pelicula extends BaseController
             return redirect()->back()->withInput();
         }
 
+        return redirect()->back()->with('mensaje', 'Registro actualizado con éxito');
+
+
        
 
     }
@@ -157,23 +162,6 @@ class Pelicula extends BaseController
     //ruta por nombre
     public function test(){
         echo 'test';
-    }
-
-    private function generar_imagen(){
-        $imagenModel = new ImagenModel();
-        $imagenModel->insert([
-            'imagen' => date('Y-m-d H:m:s'),
-            'extension' => 'PENDIENTE',
-            'data' => 'imagen paraguaya'
-        ]);
-    }
-
-    private function asignar_imagen(){
-        $imagenModel = new PeliculaImagenModel();
-        $imagenModel->insert([
-            'imagen_fk' => 2,
-            'pelicula_fk' => 9,
-        ]);
     }
 
     public function etiquetas($id) {
@@ -227,6 +215,117 @@ class Pelicula extends BaseController
                          ->delete();
         
         return $this->response->setJSON(['mensaje' => 'Eliminado']);
+    }
+
+    public function borrar_imagen($peliculaFk, $imagenFk) {
+        $imagenModel = new ImagenModel();
+        $peliculaModel = new PeliculaModel();
+        $peliculaImagenModel = new PeliculaImagenModel();
+        $imagen = $imagenModel->find($imagenFk);
+        //archivos
+        if ($imagen == null) {
+            return 'no existe imagen';
+        }
+        $imageRuta = 'uploads/peliculas/' . $imagen->imagen;
+
+        // eliminar pivote
+        $peliculaImagenModel->where('imagen_fk', $imagenFk)->where('pelicula_fk', $peliculaFk)->delete();
+        
+        if ($peliculaImagenModel->where('imagen_fk', $imagenFk)->countAllResults() == 0) {
+        //eliminar toda la imagen
+        unlink($imageRuta);
+        $imagenModel->delete($imagenFk);
+        }
+        return redirect()->back()->with('mensaje', 'Imagen Eliminada');
+
+    }
+
+    public function descargar_imagen($imagenFk) {
+        $imagenModel = new ImagenModel();
+        $imagen = $imagenModel->find($imagenFk);
+        if ($imagen == null) {
+            return 'no existe imagen';
+        }
+        $imageRuta = 'uploads/peliculas/' . $imagen->imagen;
+        return $this->response->download($imageRuta, null)->setFileName('pokeIMG.png');
+
+    }
+
+    public function asignar_imagen($peliculaFk) {
+        if ($imagefile = $this->request->getFile('imagen')) {
+            // UPLOAD
+            if ($imagefile->isValid()) {
+                // Definir reglas de validación
+                $validationRules = [
+                    'imagen' => [
+                        'uploaded[imagen]',
+                        'mime_in[imagen,image/jpg,image/jpeg,image/gif,image/png]',
+                        'max_size[imagen,4096]',
+                    ],
+                ];
+    
+                if ($this->validate($validationRules)) {
+                    //para renombrar con un nombre random
+                    $imageNombre = $imagefile->getRandomName();
+                    // $imageNombre = $imagefile->getName();
+
+
+                    $ext = $imagefile->guessExtension();
+
+                    //Para que se almacenen en la carpeta writeable
+                    // $imagefile->move(WRITEPATH . 'uploads/peliculas', $imageNombre);
+
+                    $imagefile->move('../public/uploads/peliculas', $imageNombre);
+
+                    $imagenModel = new ImagenModel();
+                    $imagenId = $imagenModel->insert([
+                        'imagen' => $imageNombre,
+                        'extension' => $ext,
+                        'data' => 'imagen paraguaya'
+                    ]);
+
+                    $imagenModel = new PeliculaImagenModel();
+                    $imagenModel->insert([
+                    'imagen_fk' => $imagenId,
+                    'pelicula_fk' => $peliculaFk,
+                    ]);
+                } else {
+                    return $this->validator->listErrors();
+                }
+            }
+        }
+    }
+    
+    public function image($image = null) {
+        if (!$image) {
+            $image = $this->request->getGet('image');
+        }
+    
+        // Asegurarse de que la imagen no contenga caracteres no permitidos
+        $image = basename($image);
+    
+        // Añadir la barra diagonal correcta
+        $name = WRITEPATH . 'uploads/peliculas/' . $image;
+    
+        if (!file_exists($name)) {
+            // Lanzar una excepción si el archivo no existe
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("La imagen no se encuentra en la ruta especificada chimbombim.");
+        }
+    
+        $fp = fopen($name, 'rb');
+        if (!$fp) {
+            throw new \Exception("No se pudo abrir el archivo de imagen.");
+        }
+    
+        // Detectar el tipo MIME de la imagen
+        $mimeType = mime_content_type($name);
+    
+        header("Content-Type: " . $mimeType);
+        header("Content-Length: " . filesize($name));
+    
+        fpassthru($fp);
+        fclose($fp); // Cerrar el archivo después de pasar su contenido al navegador
+        exit;
     }
     
 

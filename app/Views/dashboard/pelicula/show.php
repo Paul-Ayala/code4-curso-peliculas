@@ -12,7 +12,13 @@ Vista Pelicula
     <ul>
     <?php foreach ($imagenes as $i) : ?>
             <li>
-                <?= $i->imagen ?>
+                <img src="/uploads/peliculas/<?= $i->imagen ?>" width="300px">
+                <form action="<?= route_to('pelicula.borrar_imagen',$pelicula->id, $i->id) ?>" method="post">
+                    <button type="submit">Borrar</button>
+                </form>
+                <form action="<?= route_to('pelicula.descargar_imagen', $i->id) ?>" method="post">
+                    <button type="submit">Descargar</button>
+                </form>
             </li>
     <?php endforeach ?>
     </ul>

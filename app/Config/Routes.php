@@ -40,6 +40,9 @@ $routes->group('dashboard', function($routes){
     $routes->get('pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas/$1', ['as' => 'pelicula.etiquetas']);
     $routes->post('pelicula/etiqueta/(:num)', 'Dashboard\Pelicula::etiquetas_post/$1', ['as' => 'pelicula.etiquetas']);
     $routes->post('pelicula/(:num)/etiqueta/(:num)/delete', 'Dashboard\Pelicula::etiqueta_delete/$1/$2', ['as' => 'pelicula.etiqueta_delete']);
+    $routes->post('pelicula/imagen_delete/(:num)/(:num)', 'Dashboard\Pelicula::borrar_imagen/$1/$2', ['as' => 'pelicula.borrar_imagen']);
+    $routes->post('pelicula/imagen_descargar/(:num)', 'Dashboard\Pelicula::descargar_imagen/$1', ['as' => 'pelicula.descargar_imagen']);
+    
     //puede recibir argumentos:
     // $routes->get('test/(:num)', 'Pelicula::test/$1', [ 'as' => 'test'] );
     // pero en la ruta hay que cambiarle en function se espera $parametro y en botones se podría hacer:
@@ -57,6 +60,7 @@ $routes->group('dashboard', function($routes){
         $routes->presenter('categoria',  ['controller' => 'Dashboard\categoria']); 
         $routes->presenter('etiqueta', ['controller' => 'Dashboard\etiqueta']);
 
+
         //$routes->get('/test', Dashboard\Test::index)
 
         //TEST USER
@@ -71,5 +75,6 @@ $routes->group('dashboard', function($routes){
     $routes->get('register', '\App\Controllers\Web\Usuario::register', ['as' => 'usuario.register']);
     $routes->post('register_post', '\App\Controllers\Web\Usuario::register_post', ['as' => 'usuario.register_post']);
     $routes->get('logout', '\App\Controllers\Web\Usuario::logout', ['as' => 'usuario.logout']);
+    $routes->get('/image/(:any)', 'Dashboard\Pelicula::image/$1', ['as' => 'get_image']);
 
 

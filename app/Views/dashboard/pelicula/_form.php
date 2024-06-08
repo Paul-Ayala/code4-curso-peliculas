@@ -10,4 +10,8 @@
         <option <?= $c->id !== old('categoria_fk', $pelicula->categoria_fk) ?: 'selected' ?> value="<?= $c->id ?>"><?= $c->titulo ?></option>
         <?php endforeach ?>
 </select>
+<?php if ($pelicula->id) : ?>
+<label for="imagen">Imagen:</label>
+<input type="file" name="imagen" id="imagen">
+<?php endif ?>
 <button type="submit"><?= $op ?></button>
