@@ -4,23 +4,25 @@ Etiquetas
 <?= $this->endSection() ?>
 <?= $this->section('contenido') ?>
 <form action="" method="post">
-<label for="categoria_fk">Categoría:</label>
-<select name="categoria_fk" id="categoria_fk">
+<div class="mb-3">
+<label class="form-label" for="categoria_fk">Categoría:</label>
+<select class="form-control" name="categoria_fk" id="categoria_fk">
     <option value=""></option>
     <?php foreach ($categorias as $c): ?>
         <option <?= $c->id != $categoria_fk ?: 'selected' ?> value="<?= $c->id ?>"><?= $c->titulo ?></option>
         <?php endforeach ?>
 </select>
-<br/>
-<label for="etiqueta_fk">Etiqueta:</label>
-<select name="etiqueta_fk" id="etiqueta_fk">
+</div>
+<div class="mb-3">
+<label class="form-label" for="etiqueta_fk">Etiqueta:</label>
+<select class="form-control" name="etiqueta_fk" id="etiqueta_fk">
     <option value=""></option>
     <?php foreach ($etiquetas as $e): ?>
         <option value="<?= $e->id ?>"><?= $e->titulo ?></option>
         <?php endforeach ?>
 </select>
-<br/>
-<button type="submit" id="etiquetasEnviar">Enviar</button>
+</div>
+<button type="submit"  class="btn btn-outline-primary btn-lg mt-4" id="etiquetasEnviar">Enviar</button>
 </form>
 
 <script>
