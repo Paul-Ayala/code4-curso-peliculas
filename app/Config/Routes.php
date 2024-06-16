@@ -69,6 +69,16 @@ $routes->group('dashboard', function($routes){
 
     });
 
+    $routes->group('blog', function($routes){
+        //se le puede poner "pelicula" en donde está: ''
+        // $routes->presenter('', ['controller' => 'Blog\pelicula', 'only'=> ['index', 'show']]);
+        $routes->get('', 'Blog\pelicula::index', ['as' => 'blog.pelicula.index']);
+        $routes->get('categorias/(:num)', 'Blog\pelicula::index_por_categoria/$1', ['as' => 'blog.pelicula.index_por_categoria']);
+        $routes->get('etiquetas/(:num)', 'Blog\pelicula::index_por_etiqueta/$1', ['as' => 'blog.pelicula.index_por_etiqueta']);
+        $routes->get('(:num)', 'Blog\pelicula::show/$1', ['as' => 'blog.pelicula.show']);
+        $routes->get('etiquetas_por_categoria/(:num)', 'Blog\pelicula::etiquetas_por_categoria/$1', ['as' => 'blog.pelicula.etiquetas_por_categoria']);        
+    });
+
     $routes->get('login', '\App\Controllers\Web\Usuario::login', ['as' => 'usuario.login']);
     $routes->post('login_post', '\App\Controllers\Web\Usuario::login_post', ['as' => 'usuario.login_post']);
 
