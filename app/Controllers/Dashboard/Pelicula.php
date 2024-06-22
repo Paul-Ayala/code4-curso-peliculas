@@ -219,7 +219,6 @@ class Pelicula extends BaseController
 
     public function borrar_imagen($peliculaFk, $imagenFk) {
         $imagenModel = new ImagenModel();
-        $peliculaModel = new PeliculaModel();
         $peliculaImagenModel = new PeliculaImagenModel();
         $imagen = $imagenModel->find($imagenFk);
         //archivos
